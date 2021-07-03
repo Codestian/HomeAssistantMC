@@ -17,6 +17,6 @@ git add -A
 git commit -m 'feat: deploy docs'
 
 # if you are deploying to https://<USERNAME>.github.io/<REPO>
-git push -f git@github.com:Codestian/homeassistantmc.git stalble-1.16:gh-pages
+git push -f https://github.com/Codestian/homeassistantmc.git master:gh-pages
 
 cd -
