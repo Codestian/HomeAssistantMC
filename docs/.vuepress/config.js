@@ -2,6 +2,7 @@ const { description } = require('../../package')
 
 module.exports = {
   title: 'HomeAssistantMC',
+  base: '/homeassistantmc/',
   description: description,
   head: [
     ['meta', { name: 'theme-color', content: '#03a9f4' }],
