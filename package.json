@@ -1,0 +1,19 @@
+{
+  "name": "homeassistantmc",
+  "version": "1.0.0",
+  "description": "Documentation for the HomeAssistantMC mod",
+  "main": "index.js",
+  "authors": {
+    "name": "Codestian",
+    "email": ""
+  },
+  "repository": "/docs",
+  "scripts": {
+    "dev": "vuepress dev docs",
+    "build": "vuepress build docs"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "vuepress": "^1.5.3"
+  }
+}

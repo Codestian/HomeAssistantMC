@@ -1,0 +1,27 @@
+modLoader="javafml"
+loaderVersion="[36,)"
+license="MIT"
+[[mods]]
+modId="homeassistantmc"
+version="${file.jarVersion}"
+displayName="HomeAssistantMC"
+displayURL="https://github.com/Codestian/homeassistantmc"
+logoFile="logo.png"
+credits="Credits to the developers of Home Assistant"
+authors="Codestian"
+description='''
+Control Home Assistant from Minecraft.
+Build scripts and automations ingame with redstone contraptions.
+'''
+[[dependencies.homeassistantmc]]
+    modId="forge"
+    mandatory=true
+    versionRange="[36,)"
+    ordering="NONE"
+    side="BOTH"
+[[dependencies.homeassistantmc]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.16.5,1.17)"
+    ordering="NONE"
+    side="BOTH"

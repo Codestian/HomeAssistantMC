@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "particle": "homeassistantmc:blocks/service_block_top",
+    "north": "homeassistantmc:blocks/service_block_side",
+    "south": "homeassistantmc:blocks/service_block_side",
+    "east": "homeassistantmc:blocks/service_block_side",
+    "west": "homeassistantmc:blocks/service_block_side",
+    "up": "homeassistantmc:blocks/service_block_top",
+    "down": "homeassistantmc:blocks/service_block_top"
+  }
+}

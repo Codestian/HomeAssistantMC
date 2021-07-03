@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "inverted=false": {
+      "model": "homeassistantmc:block/state_block_off"
+    },
+    "inverted=true": {
+      "model": "homeassistantmc:block/state_block_on"
+    }
+  }
+}
