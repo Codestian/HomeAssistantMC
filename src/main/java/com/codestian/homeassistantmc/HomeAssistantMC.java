@@ -27,7 +27,7 @@ public class HomeAssistantMC {
 
         ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, Config.common_config);
 
-        Config.loadConfig(Config.common_config, FMLPaths.CONFIGDIR.get().resolve("homeassistant-common.toml").toString());
+        Config.loadConfig(Config.common_config, FMLPaths.CONFIGDIR.get().resolve("homeassistantmc-common.toml").toString());
 
         bus.addListener(this::commonSetup);
         ModBlocks.BLOCKS.register(bus);

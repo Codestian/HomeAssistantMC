@@ -1,7 +1,9 @@
 {
   "variants": {
     "": [
-      { "model": "homeassistantmc:block/service_block" }
+      {
+        "model": "homeassistantmc:block/service_block"
+      }
     ]
   }
 }

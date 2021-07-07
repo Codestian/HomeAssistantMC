@@ -75,14 +75,14 @@ public class ServiceBlock extends Block {
 
     @SuppressWarnings("deprecation")
     @Override
-    public void neighborChanged(BlockState p_220069_1_, World world, BlockPos blockPos, Block p_220069_4_, BlockPos p_220069_5_, boolean p_220069_6_) {
+    public void neighborChanged(BlockState blockState, World world, BlockPos blockPos, Block block, BlockPos p_220069_5_, boolean p_220069_6_) {
         if (!world.isClientSide) {
-            boolean flag = p_220069_1_.getValue(LIT);
+            boolean flag = blockState.getValue(LIT);
             if (flag != world.hasNeighborSignal(blockPos)) {
                 if (flag) {
                     world.getBlockTicks().scheduleTick(blockPos, this, 4);
                 } else {
-                    world.setBlock(blockPos, p_220069_1_.cycle(LIT), 2);
+                    world.setBlock(blockPos, blockState.cycle(LIT), 2);
                     if (world.hasNeighborSignal(blockPos)) {
                         TileEntity tileEntity = world.getBlockEntity(blockPos);
                         if (tileEntity instanceof ServiceTileEntity) {
@@ -101,7 +101,6 @@ public class ServiceBlock extends Block {
                                 }
                                 webSocket.callService(service[0], service[1], serviceData, serviceTarget);
                             } catch (Exception ignored) {
-
                             }
                         }
                     }
@@ -114,9 +113,9 @@ public class ServiceBlock extends Block {
 
     @SuppressWarnings("deprecation")
     @Override
-    public void tick(BlockState p_225534_1_, ServerWorld p_225534_2_, BlockPos p_225534_3_, Random p_225534_4_) {
-        if (p_225534_1_.getValue(LIT) && !p_225534_2_.hasNeighborSignal(p_225534_3_)) {
-            p_225534_2_.setBlock(p_225534_3_, p_225534_1_.cycle(LIT), 2);
+    public void tick(BlockState blockState, ServerWorld serverWorld, BlockPos blockPos, Random p_225534_4_) {
+        if (blockState.getValue(LIT) && !serverWorld.hasNeighborSignal(blockPos)) {
+            serverWorld.setBlock(blockPos, blockState.cycle(LIT), 2);
         }
 
     }

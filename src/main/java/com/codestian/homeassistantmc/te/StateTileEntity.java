@@ -17,9 +17,11 @@ public class StateTileEntity extends TileEntity implements ITickableTileEntity {
     private String haAttributeName = "";
     private String haAttributeOperator = "=";
     private String haAttributeValueToCheck = "";
+
     public StateTileEntity(TileEntityType<?> tileEntityTypeIn) {
         super(tileEntityTypeIn);
     }
+
     public StateTileEntity() {
         this(ModTileEntities.STATE_TILE_ENTITY_TYPE.get());
     }

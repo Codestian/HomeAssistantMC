@@ -31,7 +31,18 @@ public class Command {
                 .then(Commands.literal("status")
                         .executes(Command::getWebSocketStatus)
                 )
+                .then(Commands.literal("version")
+                        .executes(Command::getModVersion)
+                )
         );
+    }
+
+    private static int getModVersion(CommandContext<CommandSource> commandContext) {
+        Entity player = commandContext.getSource().getEntity();
+        if (player instanceof ServerPlayerEntity) {
+            player.sendMessage(new StringTextComponent("HomeAssistantMC 1.0.0 by Codestian"), player.getUUID());
+        }
+        return 1;
     }
 
     private static int getWebSocketStatus(CommandContext<CommandSource> commandContext) {

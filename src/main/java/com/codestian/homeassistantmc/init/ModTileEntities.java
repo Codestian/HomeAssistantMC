@@ -10,6 +10,7 @@ import net.minecraftforge.registries.ForgeRegistries;
 import static com.codestian.homeassistantmc.HomeAssistantMC.MOD_ID;
 
 public class ModTileEntities {
+
     public static final DeferredRegister<TileEntityType<?>> TILE_ENTITY_TYPE = DeferredRegister.create(ForgeRegistries.TILE_ENTITIES, MOD_ID);
 
     public static final RegistryObject<TileEntityType<StateTileEntity>> STATE_TILE_ENTITY_TYPE = TILE_ENTITY_TYPE
@@ -17,4 +18,5 @@ public class ModTileEntities {
 
     public static final RegistryObject<TileEntityType<ServiceTileEntity>> SERVICE_TILE_ENTITY_TYPE = TILE_ENTITY_TYPE
             .register("service", () -> TileEntityType.Builder.of(ServiceTileEntity::new, ModBlocks.SERVCE_BLOCK.get()).build(null));
+
 }

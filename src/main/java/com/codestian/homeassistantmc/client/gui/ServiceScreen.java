@@ -80,8 +80,8 @@ public class ServiceScreen extends Screen {
 
     public void onCopy() {
         if (
-                !this.inputServiceConfig.getValue().equals("YAML key service is improper") ||
-                        !this.inputServiceConfig.getValue().equals("AML configuration requires service and data keys") ||
+                !this.inputServiceConfig.getValue().equals("YAML key service is invalid") ||
+                        !this.inputServiceConfig.getValue().equals("YAML configuration requires service and data keys") ||
                         !this.inputServiceConfig.getValue().equals("Please input valid YAML configuration")
         ) {
             Minecraft.getInstance().keyboardHandler.setClipboard(this.inputServiceConfig.getValue());
@@ -100,7 +100,7 @@ public class ServiceScreen extends Screen {
                 if (jsonObject.get("service").getAsString().chars().filter(num -> num == '.').count() == 1) {
                     this.inputServiceConfig.setValue(jsonObject.toString());
                 } else {
-                    this.inputServiceConfig.setValue("YAML key service is improper");
+                    this.inputServiceConfig.setValue("YAML key service is invalid");
                 }
             } else {
                 this.inputServiceConfig.setValue("YAML configuration requires service and data keys");
