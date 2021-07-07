@@ -1,0 +1,32 @@
+# eclipse
+bin
+*.launch
+.settings
+.metadata
+.classpath
+.project
+
+# idea
+out
+*.ipr
+*.iws
+*.iml
+.idea
+
+# gradle
+build
+.gradle
+
+# other
+eclipse
+run
+
+# docs
+/node_modules
+.DS_Store
+docs/.vuepress/.temp/
+docs/.vuepress/.cache/
+docs/.vuepress/dist
+
+# Files from Forge MDK
+forge*changelog.txt
