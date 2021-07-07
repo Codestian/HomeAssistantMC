@@ -2,7 +2,7 @@ const { description } = require('../../package')
 
 module.exports = {
   title: 'HomeAssistantMC',
-  base: '/homeassistantmc/',
+  base: '/HomeAssistantMC/',
   description: description,
   head: [
     ['meta', { name: 'theme-color', content: '#03a9f4' }],
@@ -22,7 +22,7 @@ module.exports = {
       },
       {
         text: 'Github',
-        link: 'https://github.com/Codestian/homeassistant-mc'
+        link: 'https://github.com/Codestian/HomeAssistantMC'
       },
       {
         text: 'CurseForge',
@@ -46,9 +46,5 @@ module.exports = {
         }
       ],
     }
-  },
-  plugins: [
-    '@vuepress/plugin-back-to-top',
-    '@vuepress/plugin-medium-zoom',
-  ]
+  }
 }
