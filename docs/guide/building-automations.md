@@ -8,13 +8,13 @@ Before we can embark on building automations, we need to ensure that our automat
 
 ### What are Minecraft chunks?
 
-A Minecraft chunk is a 256 tall, 16 by 16 segment of a world. They are used by the world generator to divide maps into managable pieces. In Minecraft, chunks are unloaded when players are either far away or are not present in the world. Game mechanics will stop, including mob spawning, farms and redstone mechanics. The `/forceload` command can help us to ensure selected chunks are constantly loaded.
+A Minecraft chunk is a 256 tall, 16 by 16 segment of a world. They are used by the world generator to divide maps into managable pieces. In Minecraft, chunks are unloaded when players are either far away or are not present in the world. Game mechanics will stop, including command blocks, mob spawning and redstone mechanics. The `/forceload` command can help us to ensure selected chunks are constantly loaded.
 
 ![Image of Minecraft chunks](./assets/images/automation_chunks.png)
 
 ### How to forceload a chunk
 
-Stand over a selected chunk and run the command `/forceload ~ ~`. To easily identify the borders of chunks, hit `F3 + G` to enable debug mode. Chunks that have been forceloaded will now stay loaded persistently, allowing us to build our automations and have them run all the time.
+Stand over a selected chunk and run the command `/forceload add ~ ~`. To easily identify the borders of chunks, hit `F3 + G` to enable debug mode. Chunks that have been forceloaded will now stay loaded persistently, allowing us to build our automations and have them run all the time.
 
 ## Simple automation
 
