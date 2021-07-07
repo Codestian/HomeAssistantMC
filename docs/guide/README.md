@@ -13,7 +13,7 @@ HomeAssistantMC is a Minecraft mod that integrates Home Assistant to Minecraft, 
 
 ## How it works
 
-HomeAssistantMC connects to Home Assistant via the [WebSocket API](https://developers.home-assistant.io/docs/api/websocket/) with an access token. It subscribes to the event bus and listens to any entity state changes. Essentially, Minecraft becomes a websocket client of Home Asssitant.
+HomeAssistantMC connects to Home Assistant via the [WebSocket API](https://developers.home-assistant.io/docs/api/websocket/) with an access token. It subscribes to the event bus and listens for any entity state changes. Essentially, Minecraft becomes a websocket client of Home Asssitant.
 
 ## Why not...?
 

@@ -26,7 +26,7 @@ module.exports = {
       },
       {
         text: 'CurseForge',
-        link: 'https://www.curseforge.com/members/thecodestian/projects'
+        link: 'https://www.curseforge.com/minecraft/mc-mods/homeassistantmc'
       }
     ],
     sidebar: {
