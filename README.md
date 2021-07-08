@@ -7,7 +7,6 @@ Setup, configure and learn how to use HomeAssistantMC on the [documentation site
 
 ## Project Setup
 
-To build HomeAssistantMC from source code, clone the repository and open a Java IDE (IntelliJ recommended). Generate the run configurations with either `gradlew genEclipseRuns` (Eclipse) or `gradlew genIntellijRuns` (IntelliJ).
+To build HomeAssistantMC from source code, clone the repository and open a Java IDE (IntelliJ recommended). Generate the run configurations with either `gradlew genEclipseRuns` (Eclipse) or `gradlew genIntellijRuns` (IntelliJ). Run `gradlew build` to generate the .jar file.
 
-
-For the documentation site, run `npm install` followed by `npm run dev`.
+For the documentation site, run `npm install` followed by `npm run dev`. The site is built with Vuepress written in markdown format.
