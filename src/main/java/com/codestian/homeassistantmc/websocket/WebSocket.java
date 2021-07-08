@@ -86,7 +86,8 @@ public class WebSocket extends WebSocketClient {
 
     @Override
     public void onClose(int code, String reason, boolean remote) {
-        logger.warning(reason);
+        status = "Connection closed by " + (remote ? "remote peer" : "us") + " Code: " + code + " Reason: " + reason;
+        logger.warning("Connection closed by " + (remote ? "remote peer" : "us") + " Code: " + code + " Reason: " + reason);
     }
 
     @Override

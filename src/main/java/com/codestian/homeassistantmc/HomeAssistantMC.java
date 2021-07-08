@@ -26,7 +26,6 @@ public class HomeAssistantMC {
         IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
 
         ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, Config.common_config);
-
         Config.loadConfig(Config.common_config, FMLPaths.CONFIGDIR.get().resolve("homeassistantmc-common.toml").toString());
 
         bus.addListener(this::commonSetup);
