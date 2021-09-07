@@ -19,6 +19,7 @@ Currently supported Minecraft versions:
 
 |        | Forge | Fabric |
 |--------|-------|--------|
+| 1.17.x | Yes   | TBD    |
 | 1.16.x | Yes   | TBD    |
 | 1.12.x | No    | No     |
 
